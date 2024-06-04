@@ -47,8 +47,8 @@
         onEachFeature: function (feature, layer) {
             var popupContent = '<h4 style="color:' + feature.properties.color + '">' +
                                'Station code: ' + feature.properties.station_name + '</h4>' +
-                               'Zipcode: ' + feature.properties.estacion + '</h4>' + ' ' +
-                               'Zonificación: ' + feature.properties.direccion;
+                               'Nombre de estación: ' + feature.properties.estacion + '</h4>' + ' ' +
+                               'Dirección: ' + feature.properties.direccion;
             layer.bindPopup(popupContent);
         }
     });
